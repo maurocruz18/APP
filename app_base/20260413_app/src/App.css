@@ -1,0 +1,47 @@
+.swiper-button-prev .swiper-navigation-icon,
+.swiper-button-next .swiper-navigation-icon {
+	width: 10px;
+	color: var(--ion-color-primary);
+}
+
+@keyframes slide-in {
+	from {
+		transform: translateX(-20%);
+		opacity: 0;
+	}
+
+	to {
+		transform: translateX(0%);
+		opacity: 1;
+	}
+}
+
+@keyframes scroll {
+	0% {
+		background-position: 0px 0px;
+	}
+
+	100% {
+		background-position: 1600px -1600px;
+	}
+}
+
+@keyframes slideInFromRight {
+	0% {
+		transform: translateX(100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}
+
+@keyframes fade {
+	from {
+		opacity: 0.1;
+	}
+
+	to {
+		opacity: 1;
+	}
+}

@@ -1,0 +1,100 @@
+/* For information on how to create your own theme, please refer to:
+http://ionicframework.com/docs/theming/ */
+:root {
+	/* PRIMARY (#00B3E6) */
+	--ion-color-primary: #00b3e6;
+	--ion-color-primary-rgb: 0, 179, 230;
+	--ion-color-primary-contrast: #ffffff;
+	--ion-color-primary-contrast-rgb: 255, 255, 255;
+	--ion-color-primary-shade: #3e7692; /* Using your 'dark' for hover/active */
+	--ion-color-primary-tint: #009dcd; /* Using your 'light' value */
+
+	/* SECONDARY (#ffffff) */
+	--ion-color-secondary: #ffffff;
+	--ion-color-secondary-rgb: 255, 255, 255;
+	--ion-color-secondary-contrast: #000000;
+	--ion-color-secondary-contrast-rgb: 0, 0, 0;
+	--ion-color-secondary-shade: #e0e0e0;
+	--ion-color-secondary-tint: #ffffff;
+
+	/* SUCCESS (#66BB6A) */
+	--ion-color-success: #66bb6a;
+	--ion-color-success-rgb: 102, 187, 106;
+	--ion-color-success-contrast: #ffffff;
+	--ion-color-success-contrast-rgb: 255, 255, 255;
+	--ion-color-success-shade: #5aa55d;
+	--ion-color-success-tint: #75c279;
+
+	/* WARNING (#FFA726) */
+	--ion-color-warning: #ffa726;
+	--ion-color-warning-rgb: 255, 167, 38;
+	--ion-color-warning-contrast: #000000;
+	--ion-color-warning-contrast-rgb: 0, 0, 0;
+	--ion-color-warning-shade: #e09321;
+	--ion-color-warning-tint: #ffb03c;
+
+	/* ERROR/DANGER (#EF5350) */
+	--ion-color-danger: #ef5350;
+	--ion-color-danger-rgb: 239, 83, 80;
+	--ion-color-danger-contrast: #ffffff;
+	--ion-color-danger-contrast-rgb: 255, 255, 255;
+	--ion-color-danger-shade: #d24946;
+	--ion-color-danger-tint: #f16462;
+
+	/* BACKGROUNDS */
+	--ion-background-color: #ffffff;
+	--ion-background-color-rgb: 255, 255, 255;
+	--ion-item-background: #f3f3f3; /* Mapping MUI 'paper' to Ionic items */
+
+	/* CUSTOM ELEMENT (Actions) */
+	--custom-action-color: rgba(0, 179, 230, 0.7);
+
+	--ion-safe-area-top: 0;
+	--ion-safe-area-right: 5px;
+	--ion-safe-area-bottom: 5px;
+	--ion-safe-area-left: 0;
+
+	--swiper-navigation-sides-offset: -5px;
+}
+
+/* DARK MODE */
+@media (prefers-color-scheme: dark) {
+	body {
+		/* BACKGROUNDS (MUI Dark) */
+		--ion-background-color: #161c24; /* MUI background.default */
+		--ion-background-color-rgb: 22, 28, 36;
+		--ion-text-color: #ffffff;
+		--ion-text-color-rgb: 255, 255, 255;
+
+		/* MUI Paper -> Ionic Items/Cards */
+		--ion-item-background: #212b36;
+		--ion-card-background: #212b36;
+
+		/* PRIMARY (#08A3D2) */
+		--ion-color-primary: #08a3d2;
+		--ion-color-primary-rgb: 8, 163, 210;
+		--ion-color-primary-contrast: #ffffff;
+		--ion-color-primary-contrast-rgb: 255, 255, 255;
+		--ion-color-primary-shade: #0786ac; /* Using your 'dark' value */
+		--ion-color-primary-tint: #e3f2fd; /* Using your 'light' value */
+
+		/* SECONDARY (#FFFFFF) */
+		--ion-color-secondary: #ffffff;
+		--ion-color-secondary-rgb: 255, 255, 255;
+		--ion-color-secondary-contrast: #000000;
+		--ion-color-secondary-contrast-rgb: 0, 0, 0;
+		--ion-color-secondary-shade: #e0e0e0;
+		--ion-color-secondary-tint: #ffffff;
+
+		/* CUSTOM ELEMENTS */
+		--custom-action-color: rgba(0, 179, 230, 0.7);
+
+		/* STEPPED COLORS (Optimized for #161C24) */
+		--ion-color-step-50: #22282f;
+		--ion-color-step-100: #2d333a;
+		--ion-color-step-150: #393f45;
+		--ion-color-step-200: #454a50;
+		--ion-color-step-900: #e7e8e9;
+		--ion-color-step-950: #f3f3f4;
+	}
+}
