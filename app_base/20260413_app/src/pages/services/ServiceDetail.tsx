@@ -83,25 +83,25 @@ export const ServiceDetail: React.FC = () => {
             <IonGrid>
               <IonRow className="ion-text-center">
                 <IonCol>
-                  <IonText color="dark">
+                  <IonText>
                     <div style={{ fontSize: '0.8rem', fontWeight: 'bold' }}>Ping</div>
                     <div style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>{status === 'online' ? '90ms' : '--ms'}</div>
                   </IonText>
                 </IonCol>
                 <IonCol>
-                  <IonText color="dark">
+                  <IonText>
                     <div style={{ fontSize: '0.8rem', fontWeight: 'bold' }}>P.Médio</div>
                     <div style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>91ms</div>
                   </IonText>
                 </IonCol>
                 <IonCol>
-                  <IonText color="dark">
+                  <IonText >
                     <div style={{ fontSize: '0.8rem', fontWeight: 'bold' }}>Uptime</div>
                     <div style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>100%</div>
                   </IonText>
                 </IonCol>
                 <IonCol>
-                  <IonText color="dark">
+                  <IonText >
                     <div style={{ fontSize: '0.8rem', fontWeight: 'bold' }}>U.Médio</div>
                     <div style={{ fontSize: '1.1rem', fontWeight: 'bold' }}>99.9%</div>
                   </IonText>
@@ -141,7 +141,7 @@ export const ServiceDetail: React.FC = () => {
         {/* 4. GRÁFICO DE HISTÓRICO */}
         <IonCard style={{ margin: '0', borderRadius: '8px' }}>
           <IonCardContent>
-            <IonText color="dark">
+            <IonText >
               <div style={{ fontSize: '0.8rem', fontWeight: 'bold' }}>Ping</div>
               <div style={{ fontSize: '1.8rem', fontWeight: 'bold', marginBottom: '16px' }}>
                 {status === 'online' ? '90ms' : '--ms'}

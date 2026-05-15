@@ -26,6 +26,9 @@ import './theme/variables.css';
 import Dashboard from './pages/dashboard/Dashboard';
 import ServiceDetail from './pages/services/ServiceDetail';
 import Settings from './pages/settings/Settings';
+import AddServer from './pages/services/AddServer';
+import UserProfile from './pages/user/UserProfile';
+import ServerDetail from './pages/servers/ServerDetail';
 
 setupIonicReact();
 
@@ -53,6 +56,21 @@ const App: React.FC = () => {
           {/* Redirecionamento padrão: se o URL estiver vazio, vai para o Dashboard */}
           <Route exact path="/">
             <Redirect to="/dashboard" />
+          </Route>
+
+          {/* Rota para Adicionar Servidor */}
+          <Route exact path="/services/add">
+            <AddServer />
+           </Route>
+
+          {/* Rota para Perfil do Utilizador */}
+          <Route exact path="/profile">
+           <UserProfile />
+           </Route>
+
+           {/* Rota de Detalhe do Servidor/Agente */}
+          <Route exact path="/servers/:id">
+            <ServerDetail />
           </Route>
 
         </IonRouterOutlet>

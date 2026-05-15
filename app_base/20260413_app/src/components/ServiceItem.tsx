@@ -17,9 +17,10 @@ interface ServiceItemProps {
   status: ServiceStatus;
   detailText?: string; // Pode ser "Ping: 90ms", "Erro: 500", etc.
   onClick?: () => void;
+  routerLink?: string;
 }
 
-export const ServiceItem: React.FC<ServiceItemProps> = ({ name, status, detailText, onClick }) => {
+export const ServiceItem: React.FC<ServiceItemProps> = ({ name, status, detailText, onClick, routerLink }) => {
   
   // Função para mapear o estado para a cor correspondente no variables.css
   const getStatusColor = (status: ServiceStatus) => {
@@ -46,7 +47,7 @@ export const ServiceItem: React.FC<ServiceItemProps> = ({ name, status, detailTe
   const color = getStatusColor(status);
 
   return (
-    <IonItem button detail={true} onClick={onClick}>
+    <IonItem button detail={true} onClick={onClick} routerLink={routerLink}>
       <IonIcon 
         icon={getStatusIcon(status)} 
         color={color} 

@@ -38,7 +38,7 @@ export const Settings: React.FC = () => {
         </IonToolbar>
       </IonHeader>
 
-      <IonContent color="light">
+      <IonContent>
         <IonList inset={true} style={{ marginTop: '16px' }}>
           
           <IonListHeader>
@@ -54,7 +54,7 @@ export const Settings: React.FC = () => {
               value={theme} 
               onIonChange={e => setTheme(e.detail.value)}
               interface="popover"
-              style={{ background: 'var(--ion-color-light)', padding: '10px', borderRadius: '8px', width: '100%' }}
+              style={{ background: 'var(--ion-item-background)', color: 'var(--ion-text-color)', padding: '10px', borderRadius: '8px', width: '100%' }}
             >
               <IonSelectOption value="claro">Claro</IonSelectOption>
               <IonSelectOption value="escuro">Escuro</IonSelectOption>
@@ -114,7 +114,7 @@ export const Settings: React.FC = () => {
               onIonChange={e => setTimezone(e.detail.value)}
               interface="popover"
               disabled={useDeviceTimezone}
-              style={{ background: 'var(--ion-color-light)', padding: '10px', borderRadius: '8px', width: '100%' }}
+              style={{ background: 'var(--ion-item-background)', color: 'var(--ion-text-color)', padding: '10px', borderRadius: '8px', width: '100%' }}
             >
               <IonSelectOption value="UTC-01:00">UTC-01:00 Açores</IonSelectOption>
               <IonSelectOption value="UTC+00:00">UTC+00:00 Lisboa</IonSelectOption>
