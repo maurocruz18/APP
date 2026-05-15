@@ -22,10 +22,12 @@
 		"@capawesome/capacitor-android-edge-to-edge-support": "^8.0.6",
 		"@emotion/react": "^11.14.0",
 		"@emotion/styled": "^11.14.1",
-		"@ionic/react": "^8.5.0",
+		"@ionic/react": "^8.8.5",
+		"@ionic/react-router": "^8.8.5",
 		"@mui/material": "^7.3.8",
 		"@tanstack/history": "^1.161.4",
 		"@tanstack/react-router": "^1.163.3",
+		"history": "^4.10.1",
 		"ionicons": "^7.4.0",
 		"jwt-decode": "^4.0.0",
 		"ra-data-json-server": "^5.14.3",
@@ -34,6 +36,9 @@
 		"react-admin": "^5.14.3",
 		"react-dom": "19.2.0",
 		"react-grid-layout": "^2.2.2",
+		"react-router": "^5.3.4",
+		"react-router-dom": "^5.3.4",
+		"recharts": "^3.8.1",
 		"swiper": "^12.1.2"
 	},
 	"devDependencies": {

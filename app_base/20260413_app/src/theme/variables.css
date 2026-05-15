@@ -1,100 +1,65 @@
 /* For information on how to create your own theme, please refer to:
 http://ionicframework.com/docs/theming/ */
 :root {
-	/* PRIMARY (#00B3E6) */
-	--ion-color-primary: #00b3e6;
-	--ion-color-primary-rgb: 0, 179, 230;
-	--ion-color-primary-contrast: #ffffff;
-	--ion-color-primary-contrast-rgb: 255, 255, 255;
-	--ion-color-primary-shade: #3e7692; /* Using your 'dark' for hover/active */
-	--ion-color-primary-tint: #009dcd; /* Using your 'light' value */
+  /* Marca / Cor Principal (O Azul do teu Logo) */
+  --ion-color-primary: #007BFF;
+  --ion-color-primary-rgb: 0,123,255;
+  --ion-color-primary-contrast: #ffffff;
+  --ion-color-primary-shade: #006ce0;
+  --ion-color-primary-tint: #1a88ff;
 
-	/* SECONDARY (#ffffff) */
-	--ion-color-secondary: #ffffff;
-	--ion-color-secondary-rgb: 255, 255, 255;
-	--ion-color-secondary-contrast: #000000;
-	--ion-color-secondary-contrast-rgb: 0, 0, 0;
-	--ion-color-secondary-shade: #e0e0e0;
-	--ion-color-secondary-tint: #ffffff;
+  /* Estado: ONLINE (Verde) */
+  --ion-color-success: #28a745;
+  --ion-color-success-rgb: 40,167,69;
+  --ion-color-success-contrast: #ffffff;
+  --ion-color-success-shade: #23933d;
+  --ion-color-success-tint: #3eb058;
 
-	/* SUCCESS (#66BB6A) */
-	--ion-color-success: #66bb6a;
-	--ion-color-success-rgb: 102, 187, 106;
-	--ion-color-success-contrast: #ffffff;
-	--ion-color-success-contrast-rgb: 255, 255, 255;
-	--ion-color-success-shade: #5aa55d;
-	--ion-color-success-tint: #75c279;
+  /* Estado: OFFLINE / ERRO (Vermelho) */
+  --ion-color-danger: #dc3545;
+  --ion-color-danger-rgb: 220,53,69;
+  --ion-color-danger-contrast: #ffffff;
+  --ion-color-danger-shade: #c22f3d;
+  --ion-color-danger-tint: #e04958;
 
-	/* WARNING (#FFA726) */
-	--ion-color-warning: #ffa726;
-	--ion-color-warning-rgb: 255, 167, 38;
-	--ion-color-warning-contrast: #000000;
-	--ion-color-warning-contrast-rgb: 0, 0, 0;
-	--ion-color-warning-shade: #e09321;
-	--ion-color-warning-tint: #ffb03c;
+  /* Estado: PAUSADO (Amarelo) */
+  --ion-color-warning: #ffc107;
+  --ion-color-warning-rgb: 255,193,7;
+  --ion-color-warning-contrast: #000000;
+  --ion-color-warning-shade: #e0aa06;
+  --ion-color-warning-tint: #ffc720;
 
-	/* ERROR/DANGER (#EF5350) */
-	--ion-color-danger: #ef5350;
-	--ion-color-danger-rgb: 239, 83, 80;
-	--ion-color-danger-contrast: #ffffff;
-	--ion-color-danger-contrast-rgb: 255, 255, 255;
-	--ion-color-danger-shade: #d24946;
-	--ion-color-danger-tint: #f16462;
+  /* Estado: DESCONHECIDO (Cinzento) */
+  --ion-color-medium: #6c757d;
+  --ion-color-medium-rgb: 108,117,125;
+  --ion-color-medium-contrast: #ffffff;
+  --ion-color-medium-shade: #5f676e;
+  --ion-color-medium-tint: #7b838a;
 
-	/* BACKGROUNDS */
-	--ion-background-color: #ffffff;
-	--ion-background-color-rgb: 255, 255, 255;
-	--ion-item-background: #f3f3f3; /* Mapping MUI 'paper' to Ionic items */
-
-	/* CUSTOM ELEMENT (Actions) */
-	--custom-action-color: rgba(0, 179, 230, 0.7);
-
-	--ion-safe-area-top: 0;
-	--ion-safe-area-right: 5px;
-	--ion-safe-area-bottom: 5px;
-	--ion-safe-area-left: 0;
-
-	--swiper-navigation-sides-offset: -5px;
+  /* Estado: EM MANUTENÇÃO (Azul Claro) */
+  --ion-color-info: #17a2b8;
+  --ion-color-info-rgb: 23,162,184;
+  --ion-color-info-contrast: #ffffff;
+  --ion-color-info-shade: #148ea2;
+  --ion-color-info-tint: #2eabbf;
+  
+  /* Fundos da Aplicação */
+  --ion-background-color: #ffffff;
+  --ion-text-color: #222428;
 }
 
-/* DARK MODE */
+/* Modo Escuro */
 @media (prefers-color-scheme: dark) {
-	body {
-		/* BACKGROUNDS (MUI Dark) */
-		--ion-background-color: #161c24; /* MUI background.default */
-		--ion-background-color-rgb: 22, 28, 36;
-		--ion-text-color: #ffffff;
-		--ion-text-color-rgb: 255, 255, 255;
-
-		/* MUI Paper -> Ionic Items/Cards */
-		--ion-item-background: #212b36;
-		--ion-card-background: #212b36;
-
-		/* PRIMARY (#08A3D2) */
-		--ion-color-primary: #08a3d2;
-		--ion-color-primary-rgb: 8, 163, 210;
-		--ion-color-primary-contrast: #ffffff;
-		--ion-color-primary-contrast-rgb: 255, 255, 255;
-		--ion-color-primary-shade: #0786ac; /* Using your 'dark' value */
-		--ion-color-primary-tint: #e3f2fd; /* Using your 'light' value */
-
-		/* SECONDARY (#FFFFFF) */
-		--ion-color-secondary: #ffffff;
-		--ion-color-secondary-rgb: 255, 255, 255;
-		--ion-color-secondary-contrast: #000000;
-		--ion-color-secondary-contrast-rgb: 0, 0, 0;
-		--ion-color-secondary-shade: #e0e0e0;
-		--ion-color-secondary-tint: #ffffff;
-
-		/* CUSTOM ELEMENTS */
-		--custom-action-color: rgba(0, 179, 230, 0.7);
-
-		/* STEPPED COLORS (Optimized for #161C24) */
-		--ion-color-step-50: #22282f;
-		--ion-color-step-100: #2d333a;
-		--ion-color-step-150: #393f45;
-		--ion-color-step-200: #454a50;
-		--ion-color-step-900: #e7e8e9;
-		--ion-color-step-950: #f3f3f4;
-	}
+  body {
+   --ion-background-color: #000000;
+  --ion-text-color: #ffffff;
+  
+  /* Cor para os fundos dos itens e selects no escuro */
+  --ion-item-background: #1a1a1a; 
+  --ion-card-background: #121212;
+  
+  /* Ajuste para a borda branca que mencionaste */
+  --border-color-custom: #333333;
+  }
 }
+
